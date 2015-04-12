@@ -2,6 +2,7 @@ import pip
 import prometheus_client
 import sys
 
+
 def LoadInstallations(counter):
     """Load installed packages and export the version map.
 
