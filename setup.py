@@ -11,7 +11,7 @@ instructions.
 
 setup(
     name="pip-prometheus",
-    version="0.0.1",
+    version="1.0.0",
     author="Uriel Corfa",
     author_email="uriel@corfa.fr",
     description=(
@@ -27,7 +27,7 @@ setup(
         "pip>=6.0.0",
     ],
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
         "Intended Audience :: Information Technology",
         "Intended Audience :: System Administrators",
