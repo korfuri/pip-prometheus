@@ -24,7 +24,7 @@ setup(
     long_description=LONG_DESCRIPTION,
     install_requires=[
         "prometheus_client>=0.0.8",
-        "pip>=6.0.0",
+        "pip>=9.0.0",
     ],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
