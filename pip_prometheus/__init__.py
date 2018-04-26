@@ -1,6 +1,7 @@
-import pip
 import prometheus_client
 import sys
+import subprocess
+import json
 
 
 def LoadInstallations(counter):
@@ -10,9 +11,12 @@ def LoadInstallations(counter):
     be increased each time. Since Prometheus counters are never
     decreased, the aggregated results will not make sense.
     """
-    installations = pip.utils.get_installed_distributions()
+    process = subprocess.Popen(["pip", "list", "--format=json"],
+                               stdout=subprocess.PIPE)
+    output, _ = process.communicate()
+    installations = json.loads(output)
     for i in installations:
-        counter.labels(i.key, i.version).inc()
+        counter.labels(i["name"], i["version"]).inc()
 
 
 _installed_apps = prometheus_client.Counter(

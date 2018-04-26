@@ -6,7 +6,7 @@ import pip_prometheus
 
 class TestPipPrometheus(unittest.TestCase):
     def test_exportsPython(self):
-        self.assertEquals(
+        self.assertEqual(
             1, REGISTRY.get_sample_value(
                 'pip_system_components_map',
                 labels={
