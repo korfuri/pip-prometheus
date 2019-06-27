@@ -3,6 +3,7 @@ Export the version of Pip packages to Prometheus.io
 
 [![PyPI version](https://badge.fury.io/py/pip-prometheus.svg)](http://badge.fury.io/py/pip-prometheus)
 [![Build Status](https://travis-ci.org/korfuri/pip-prometheus.svg?branch=master)](https://travis-ci.org/korfuri/pip-prometheus)
+[![PyPi page link -- Python versions](https://img.shields.io/pypi/pyversions/pip-prometheus.svg)](https://pypi.python.org/pypi/pip-prometheus)
 
 ## Usage
 
