@@ -14,7 +14,7 @@ def LoadInstallations(counter):
     process = subprocess.Popen(["pip", "list", "--format=json"],
                                stdout=subprocess.PIPE)
     output, _ = process.communicate()
-    installations = json.loads(output)
+    installations = json.loads(output.decode())
     for i in installations:
         counter.labels(i["name"], i["version"]).inc()
 

@@ -8,7 +8,7 @@ class TestPipPrometheus(unittest.TestCase):
     def test_exportsPython(self):
         self.assertEqual(
             1, REGISTRY.get_sample_value(
-                'pip_system_components_map',
+                'pip_system_components_map_total',
                 labels={
                     'component': 'python',
                     'version': sys.version,

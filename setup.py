@@ -11,7 +11,7 @@ instructions.
 
 setup(
     name="pip-prometheus",
-    version="1.1.0",
+    version="1.2.0",
     author="Uriel Corfa",
     author_email="uriel@corfa.fr",
     description=(
@@ -23,7 +23,7 @@ setup(
     test_suite="tests",
     long_description=LONG_DESCRIPTION,
     install_requires=[
-        "prometheus_client>=0.0.8",
+        "prometheus_client>=0.7.0",
         "pip>=9.0.0",
     ],
     classifiers=[
@@ -33,5 +33,11 @@ setup(
         "Intended Audience :: System Administrators",
         "Topic :: System :: Monitoring",
         "License :: OSI Approved :: Apache Software License",
+        "Programming Language :: Python :: 2",
+        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.5",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
     ],
 )
