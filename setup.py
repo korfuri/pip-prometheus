@@ -11,7 +11,7 @@ instructions.
 
 setup(
     name="pip-prometheus",
-    version="1.2.0",
+    version="1.2.1",
     author="Uriel Corfa",
     author_email="uriel@corfa.fr",
     description=(
